@@ -4,9 +4,7 @@ var lvl = 1;
 
 $(document).ready(function() {
     if (username != null) {
-	console.log(username);
-	alert("Welcome " + username + "!");
+	$("#content").append(username)
     }
-    console.log(username);
 });
 
