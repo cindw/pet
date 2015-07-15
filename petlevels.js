@@ -4,6 +4,7 @@ var lvl = 1;
 
 document.ready(function() {
     if (username != null) {
-}
+	alert("Welcome " + username + "!");
+    }
 });
 
