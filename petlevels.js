@@ -25,7 +25,7 @@ var get_cookie = function(cookie) {
 };
 
 var set_user = function(user) {
-    document.cookie = document.cookie + "user="+user;
+    document.cookie = "user="+user;
 };
 
 var inc_lvl = function() {
