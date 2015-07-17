@@ -32,6 +32,6 @@ var inc_lvl = function() {
     document.cookie;
 };
 
-var clear = funtion() {
+var clear = function() {
     document.cookie = ""
 };
