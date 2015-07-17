@@ -8,6 +8,7 @@ var spd;
 var mun;
 
 $(document).ready(function() {
+    console.log(document.cookie);
     username = prompt("Enter your name.", "Name");
     if (username != null) {
 	set_user(username);
