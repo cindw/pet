@@ -48,6 +48,7 @@ var clear_cookies = function() {
 };
 
 var getMouse = function(e) {
+    e.preventDefault();
     x = e.offsetX;
     y = e.offsetY;
     console.log(x + ", " + y);
