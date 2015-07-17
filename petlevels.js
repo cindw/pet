@@ -8,13 +8,14 @@ var spd;
 var mun;
 
 $(document).ready(function() {
-    if (get_cookie("user") == null) 
+    if (get_cookie("user") == null) {
 	username = prompt("Enter your name.", "Name");
 
-    else if (username != null) {
-	set_user(username);
-	$("#content").append("Hello " + username + "!");
+	if (username != null) {
+	    set_user(username);
     }
+
+    $("#content").append("Hello " + username + "!");
 });
 
 var get_cookie = function(cookie) {
