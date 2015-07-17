@@ -8,15 +8,15 @@ var spd;
 var mun;
 
 $(document).ready(function() {
-    if (get_cookie("user") == null || document.cookie == "") {
+    if ( get_cookie("user") == null ) {
 	username = prompt("Enter your name.", "Name");
 
-	if (username != null) {
+	if ( username != null ) {
 	    set_user(username);
 	}
     }
 
-    $("#content").append("Hello " + username + "!");
+    $("#content").append("Hello " + get_cookie("user") + "!");
 });
 
 var get_cookie = function(cookie) {
