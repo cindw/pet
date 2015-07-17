@@ -22,6 +22,7 @@ $(document).ready(function() {
 var get_cookie = function(cookie) {
     var clist = document.cookie.split(';');
     for ( var i = 0; i < clist.size; i++ ){
+	console.log(clist[i]);
     }
 };
 
