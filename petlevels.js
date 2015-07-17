@@ -8,7 +8,7 @@ var spd;
 var mun;
 
 $(document).ready(function() {
-    if (get_cookie("user") == null) {
+    if (get_cookie("user") == null || document.cookie == "") {
 	username = prompt("Enter your name.", "Name");
 
 	if (username != null) {
