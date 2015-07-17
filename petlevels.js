@@ -8,8 +8,10 @@ var spd;
 var mun;
 
 $(document).ready(function() {
-    username = prompt("Enter your name.", "Name");
-    if (username != null) {
+    if (get_cookie("user") == null) 
+	username = prompt("Enter your name.", "Name");
+
+    else (username != null) {
 	set_user(username);
 	$("#content").append("Hello " + username + "!");
     }
@@ -17,15 +19,10 @@ $(document).ready(function() {
 
 var get_cookie = function(cookie) {
     var clist = document.cookie.split("; ");
-    console.log(clist.length);
+
     for ( var i = 0; i < clist.length; i++ ) {
-	console.log(clist[i]);
 	c = clist[i].split("=");
-	console.log(c[0]);
-	console.log(cookie);
-	console.log(cookie == c[0]);
 	if ( c[0] == cookie ) {
-	    console.log(c[1]);
 	    return c[1];
 	}
     }
