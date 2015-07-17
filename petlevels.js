@@ -1,11 +1,4 @@
-var user;
-var lvl;
-var hp;
-var mp;
-var str;
-var def;
-var spd;
-var mun;
+
 
 $(document).ready(function() {
     user = prompt("Enter your name.", "Name");
