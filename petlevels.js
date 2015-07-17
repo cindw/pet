@@ -20,6 +20,7 @@ var get_cookie = function(cookie) {
     for ( var i = 0; i < clist.size; i++ ) {
 	console.log(clist[i]);
 	c = clist[i].split("=");
+	console.log(c);
 	if ( c == cookie ) {
 	    console.log(c[1]);
 	    return c[1];
