@@ -17,7 +17,8 @@ $(document).ready(function() {
 
 var get_cookie = function(cookie) {
     var clist = document.cookie.split("; ");
-    for ( var i = 0; i < clist.size; i++ ) {
+    console.log(clist.length);
+    for ( var i = 0; i < clist.length; i++ ) {
 	console.log(clist[i]);
 	c = clist[i].split("=");
 	console.log(c);
