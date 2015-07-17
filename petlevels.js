@@ -14,13 +14,14 @@ $(document).ready(function() {
 	$("#content").append("Hello " + username + "!");
     }
 
-    console.log('cookie');
     console.log(document.cookie);
 
 });
 
 var get_cookie = function(cookie) {
     var clist = document.cookie.split(';');
+    for ( var i = 0; i < clist.size; i++ ){
+    }
 };
 
 var set_user = function(user) {
