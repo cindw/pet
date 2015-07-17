@@ -1,4 +1,4 @@
-var user;
+var username;
 var lvl;
 var hp;
 var mp;
@@ -8,8 +8,8 @@ var spd;
 var mun;
 
 $(document).ready(function() {
-    user = prompt("Enter your name.", "Name");
-    if (user != null) {
+    username = prompt("Enter your name.", "Name");
+    if (username != null) {
 	document.cookie = "username=" +username; 
 	$("#content").append("Hello " + username + "!");
     }
