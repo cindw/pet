@@ -1,11 +1,11 @@
-var username;
-var lvl;
-var hp;
-var mp;
-var str;
-var def;
-var spd;
-var mun;
+var username
+var lvl
+var hp
+var mp
+var str
+var def
+var spd
+var mun
 
 
 $(document).ready(function() {
