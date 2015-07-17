@@ -22,9 +22,12 @@ var get_cookie = function(cookie) {
 	console.log(clist[i]);
 	c = clist[i].split("=");
 	console.log(c);
-	if ( c == cookie ) {
+	if ( c[0] == cookie ) {
 	    console.log(c[1]);
 	    return c[1];
+	}
+	else {
+	    return null
 	}
     }
 };
