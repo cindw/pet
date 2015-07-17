@@ -32,7 +32,7 @@ var inc_lvl = function() {
     document.cookie;
 };
 
-var clear = function() {
+var clear_cookies = function() {
     document.cookie = ""
     console.log(document.cookie);
 };
