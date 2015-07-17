@@ -9,8 +9,9 @@ var mun;
 
 $(document).ready(function() {
     username = prompt("Enter your name.", "Name");
+    console.log(username);
     if (username != null) {
-	document.cookie = "username=" +username; 
+	document.cookie = "username=" + username; 
 	$("#content").append("Hello " + username + "!");
     }
 });
