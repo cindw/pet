@@ -47,7 +47,7 @@ var clear_cookies = function() {
     console.log(document.cookie);
 };
 
-var getMouse = function(e) {
+var mouse = function(e) {
     e.preventDefault();
     x = e.offsetX;
     y = e.offsetY;
