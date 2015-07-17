@@ -1,3 +1,6 @@
+var x;
+var y;
+
 var username;
 var lvl;
 var hp;
@@ -43,3 +46,11 @@ var clear_cookies = function() {
     document.cookie = "expires=Thu, 01 Jan 1970 00:00:00 UTC";
     console.log(document.cookie);
 };
+
+var getMouse() {
+    x = e.offsetX;
+    y = e.offsetY;
+    console.log(x + ", " + y);
+}
+
+window.setInterval(getMouse(),100);
