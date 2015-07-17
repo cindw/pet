@@ -34,4 +34,5 @@ var inc_lvl = function() {
 
 var clear = function() {
     document.cookie = ""
+    console.log(document.cookie);
 };
