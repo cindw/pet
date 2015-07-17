@@ -21,11 +21,7 @@ console.log(document.cookie);
 
 var get_cookie = function(cookie) {
     var clist = document.cookie.split(';');
-    for i in clist {
-	if ( i == cookie ) {
-	    break;
-    }
-}
+};
 
 var set_user = function(user) {
     document.cookie = document.cookie + "user="+user;
