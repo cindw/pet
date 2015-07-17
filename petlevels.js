@@ -9,15 +9,15 @@ var mun;
 
 $(document).ready(function() {
     username = prompt("Enter your name.", "Name");
-    console.log(username);
     if (username != null) {
-	document.cookie = "username=" + username; 
+	set_user(username);
 	$("#content").append("Hello " + username + "!");
     }
-});
 
-console.log('cookie');
-console.log(document.cookie);
+    console.log('cookie');
+    console.log(document.cookie);
+
+});
 
 var get_cookie = function(cookie) {
     var clist = document.cookie.split(';');
