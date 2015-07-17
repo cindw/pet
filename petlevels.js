@@ -20,11 +20,14 @@ $(document).ready(function() {
 });
 
 var get_cookie = function(cookie) {
-    var clist = document.cookie.split(';');
-    console.log(clist);
+    var clist = document.cookie.split("; ");
     for ( var i = 0; i < clist.size; i++ ) {
-	console.log(clist);
 	console.log(clist[i]);
+	c = clist[i].split("=");
+	if ( c == cookie ) {
+	    console.log(c[1]);
+	    return c[1];
+	}
     }
 };
 
