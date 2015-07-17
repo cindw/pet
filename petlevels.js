@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	if (username != null) {
 	    set_user(username);
+	}
     }
 
     $("#content").append("Hello " + username + "!");
