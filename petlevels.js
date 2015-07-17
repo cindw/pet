@@ -21,15 +21,15 @@ var get_cookie = function(cookie) {
     for ( var i = 0; i < clist.length; i++ ) {
 	console.log(clist[i]);
 	c = clist[i].split("=");
-	console.log(c);
+	console.log(c[0]);
+	console.log(cookie);
+	console.log(cookie == c[0]);
 	if ( c[0] == cookie ) {
 	    console.log(c[1]);
 	    return c[1];
 	}
-	else {
-	    return null
-	}
     }
+    return null;
 };
 
 var set_user = function(user) {
