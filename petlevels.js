@@ -19,7 +19,7 @@ $(document).ready(function() {
 	}
     }
 
-    $("#content").append("Hello " + get_cookie("user") + "!");
+    $("#content").append(document.cookie+"Hello " + get_cookie("user") + "!");
 });
 
 var get_cookie = function(cookie) {
